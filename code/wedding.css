@@ -1,0 +1,113 @@
+h2 {
+  color: rgb(64, 104, 77);
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  padding-left: 150px;
+}
+
+h3 {
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient( rgb(64, 104, 77) 20%, rgb(241, 139, 182) 100%);
+  font-family: sans-serif;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding-left: 550px;  
+}
+
+nav.navbar {
+  display: flex;
+  background-color: rgb(64, 104, 77);
+}
+
+.mainNavbar {
+  display: flex;
+  background-color: rgb(64, 104, 77);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  background-color: rgb(64, 104, 77);
+  font-size: 1.5rem;
+  margin-left: 600px;
+}
+
+#navLlinks:hover {
+  color: rgb(241, 139, 182) !important;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 5px;
+  padding-left: 400px; /* Default padding for larger screens */
+}
+
+@media (max-width: 1000px) {
+  .btn.btn-link {
+      color: rgb(241, 139, 182);
+      margin: auto;
+      justify-content: flex-end;
+  }
+}
+
+.image-gallery {
+  display: absolute;
+  align-items: center;
+  gap: 10px;
+  padding-left: 450px;
+  padding-top: 100px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0);
+}
+
+.btn {
+  color: blue;
+  align-items: center !important;
+  padding-right: 900px;
+  padding-left: 400px;
+  padding-bottom: 50px;
+}
+
+/* Flex container */
+.gallery {
+  display: flex;             /* Enables Flexbox */
+  flex-wrap: wrap;           /* Allows images to wrap onto new rows */
+  justify-content: center;   /* Centers images horizontally */
+  align-items: center;       /* Ensures images align properly */
+  gap: 20px;                 /* Adds spacing between images */
+  padding: 100px 20px;        /* Adds padding at the top and sides */
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Flex items (images) */
+.gallery img {
+  max-width: 100%;           /* Ensures images don’t overflow */
+  height: auto;              /* Keeps aspect ratio */
+  width: calc(33.33% - 20px); /* Ensures 3 images per row, accounting for the gap */
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .gallery img {
+      width: calc(50% - 20px);  /* 2 images per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+      width: calc(100% - 20px); /* 1 image per row */
+  }
+}
+
+
